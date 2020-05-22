@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="ClientInfoCell" customModule="InternalSystem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIu-Yk-pa6">
+                        <rect key="frame" x="10" y="23" width="294" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HEP-wL-MHh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-RA-aMX">
+                        <rect key="frame" x="10" y="49" width="43" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0WX-aa-NED"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欠款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5G-6D-KNY">
+                        <rect key="frame" x="320" y="49" width="29" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ynZ-eF-E0y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxJ-6I-2BN">
+                        <rect key="frame" x="0.0" y="119" width="354" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ki8-V2-PCV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BZ-wj-Ldm">
+                        <rect key="frame" x="10" y="75" width="27" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0RA-AJ-Sre"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1BZ-wj-Ldm" firstAttribute="top" secondItem="WnL-RA-aMX" secondAttribute="bottom" constant="5" id="08V-wP-8oI"/>
+                    <constraint firstItem="WnL-RA-aMX" firstAttribute="top" secondItem="vIu-Yk-pa6" secondAttribute="bottom" constant="5" id="GM3-MV-oUa"/>
+                    <constraint firstAttribute="trailing" secondItem="E5G-6D-KNY" secondAttribute="trailing" constant="5" id="IcO-aY-sac"/>
+                    <constraint firstItem="E5G-6D-KNY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J0o-DO-rAF"/>
+                    <constraint firstItem="WnL-RA-aMX" firstAttribute="top" secondItem="vIu-Yk-pa6" secondAttribute="bottom" constant="5" id="Kbx-9u-PBV"/>
+                    <constraint firstItem="DxJ-6I-2BN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NzI-Ts-rUS"/>
+                    <constraint firstItem="vIu-Yk-pa6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RSJ-V0-vxW"/>
+                    <constraint firstAttribute="trailing" secondItem="vIu-Yk-pa6" secondAttribute="trailing" constant="50" id="axd-dz-GXA"/>
+                    <constraint firstAttribute="bottom" secondItem="DxJ-6I-2BN" secondAttribute="bottom" id="eDH-BC-IF2"/>
+                    <constraint firstItem="1BZ-wj-Ldm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gYe-wN-XzH"/>
+                    <constraint firstItem="WnL-RA-aMX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mCg-lQ-nPd"/>
+                    <constraint firstAttribute="trailing" secondItem="DxJ-6I-2BN" secondAttribute="trailing" id="ndm-hM-A4m"/>
+                    <constraint firstItem="WnL-RA-aMX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yzm-dH-LSv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="clientNameLabel" destination="vIu-Yk-pa6" id="PNh-AP-DvH"/>
+                <outlet property="collectMoneyLabel" destination="E5G-6D-KNY" id="Aay-7y-3q7"/>
+                <outlet property="contactLabel" destination="WnL-RA-aMX" id="zvK-Ag-HNO"/>
+                <outlet property="phoneLabel" destination="1BZ-wj-Ldm" id="bJ0-hg-pNp"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="92"/>
+        </tableViewCell>
+    </objects>
+</document>

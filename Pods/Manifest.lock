@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.3.0)
+  - MJRefresh (3.1.12)
+  - ObjectMapper (2.2.2)
+  - RESideMenu (4.0.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3)
+  - MJRefresh
+  - ObjectMapper (~> 2.2)
+  - RESideMenu (~> 4.0.7)
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: dae1751f70a9fd14884430a666c078e9e2a7963c
+
+COCOAPODS: 1.1.1
